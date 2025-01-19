@@ -12,6 +12,6 @@ else if(ch=='Y'){
     printf("Slow Down");
 }
 else{
-    printf("Invalid input")
+    printf("Invalid input");
 }
 }
