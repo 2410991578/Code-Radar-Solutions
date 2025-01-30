@@ -4,8 +4,9 @@ int main(){
     char luck;
     scanf("%d" "%d",&a,&b);
     scanf("%c",&luck);
-    printf("%d",luck);
-
+    if(luck=='+'){
+        printf("%d",a+b);
+    }
     if(luck=='-'){
         printf("%d",a-b);
     }
