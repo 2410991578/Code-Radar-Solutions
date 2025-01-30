@@ -2,7 +2,8 @@
 int main(){
     int a,b;
     char luck;
-    scanf("%d" "%d" "%c",&a,&b,&luck);
+    scanf("%d" "%d",&a,&b);
+    scanf(" %c",&luck);
     if(luck=='+'){
         return a+b;
     }
@@ -19,6 +20,5 @@ int main(){
     else{
         printf("error");
     }
-printf(main())
     return 0;
 }
