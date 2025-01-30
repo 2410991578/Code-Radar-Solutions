@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
     int a,b;
-    char luck;
+    char luck[99];
     scanf("%d" "%d" "%s",&a,&b,&luck);
     if(luck=='+'){
         printf("%d",a+b);
