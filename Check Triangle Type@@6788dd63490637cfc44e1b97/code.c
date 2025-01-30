@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main(){
     int a,b,c;
-    scanf("%d %d %d",%a,&b,&c);
+    scanf("%d %d %d",&a,&b,&c);
     if(a==b && b==c && c==a){
         printf("Equilateral");
     }
@@ -9,7 +9,7 @@ int main(){
         printf("Isosceles");
     }
     else{
-        printf("scalene");
+        printf("Scalene");
     }
     return 0;
 }
