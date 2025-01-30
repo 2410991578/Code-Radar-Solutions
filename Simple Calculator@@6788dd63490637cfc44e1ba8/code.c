@@ -2,7 +2,7 @@
 int main(){
     int a,b;
     char luck;
-    scanf("%d" "%d\n",&a,&b);
+    scanf("%d" "%d",&a,&b);
     scanf("%c",&luck);
     if(luck=='+'){
         printf("%d",a+b);
