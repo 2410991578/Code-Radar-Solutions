@@ -13,9 +13,6 @@ int main(){
         printf("%d",a*b);
 
     }
-    else if(luck=='/'){
-        printf("%d",a/b);
-    }
     else{
         printf("error");
     }
