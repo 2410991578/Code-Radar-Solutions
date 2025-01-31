@@ -10,11 +10,12 @@ int main(){
         if(arr[i]!=arr[j]){
             printf("NO");
             break;
+        } 
+        else{
+            printf("YES");
+            break;
         }
 
-    }
-    if(i>j){
-        printf("YES");
     }
     return 0;    
 }
