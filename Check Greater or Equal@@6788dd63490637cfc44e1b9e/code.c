@@ -2,7 +2,7 @@
 int main(){
     int n,m;
     scanf("%d %d",&n,&m);
-    if(n>m){
+    if(n>m || n=m){
         printf("Yes");
     }
     else{
