@@ -12,9 +12,7 @@ int main(){
         if(arr[i]==t){
             printf("%d",i);
         }
-        else{
-            return -1;
-        }
+    
     }
 
     
