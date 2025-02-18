@@ -1,5 +1,5 @@
 #include <stdio.h>
-void isPrime();
+int isPrime(int num);
 int main(){
     int t;
     scanf("%d",&t);
@@ -10,7 +10,7 @@ int main(){
     }
     return 0;
 }
-void isPrime(){
+int isPrime(int num){
     int count=0;
     for(int i=2; i<=n; i++){
         if(i%num){
@@ -21,7 +21,7 @@ void isPrime(){
         printf("1");
     }
     else{
-        printf("0")
+        printf("0");
     }
 }
 
