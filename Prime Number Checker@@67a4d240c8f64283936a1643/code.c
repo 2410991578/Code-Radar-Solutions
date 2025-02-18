@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdbool.h> // Include this header for bool type
+#include <stdbool.h> 
 
 bool isPrime(int num);
 
