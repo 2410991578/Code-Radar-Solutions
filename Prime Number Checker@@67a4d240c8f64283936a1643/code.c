@@ -12,7 +12,7 @@ int main(){
 }
 int isPrime(int num){
     int count=0;
-    for(int i=2; i<=n; i++){
+    for(int i=2; i<=num; i++){
         if(i%num){
             count++;
         }
