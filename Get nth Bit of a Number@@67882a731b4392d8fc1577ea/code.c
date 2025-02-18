@@ -2,6 +2,7 @@
 int main(){
     int n,m;
     scanf("%d",&n);
-    printf("%d",(1<<n) || m);
+    m=1<<n;
+    printf("%d",m);
     return 0;
 }
