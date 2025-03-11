@@ -16,6 +16,6 @@ int main(){
     if(n<=0){
         printf("Invalid input\n");
     }
-    fibonacci(n;)
+    fibonacci(n);
     return 0;
 }
