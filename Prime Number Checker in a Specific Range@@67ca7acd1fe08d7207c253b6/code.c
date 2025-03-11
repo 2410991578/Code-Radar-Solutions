@@ -5,7 +5,7 @@ int isPrime(int a,int b){
         count++;
     }
     if(count=2){
-        printf("%d",i);
+        printf("prime");
     }
     else{
         printf("No prime numbers");
