@@ -1,5 +1,5 @@
 #include <stdio.h>
-void fibonacci(int n){
+void fibonacciSeries(int n){
     int a=0;
     int b=1;
     int c;
@@ -16,6 +16,6 @@ int main(){
     if(n<=0){
         printf("Invalid input\n");
     }
-    fibonacci(n);
+    fibonacciSeries(n);
     return 0;
 }
