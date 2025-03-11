@@ -15,8 +15,10 @@ int main(){
     scanf("%d",&n);
     if(n<=0){
         printf("Invalid input\n");
-        return 0;
+        
     }
+    else{
     fibonacciSeries(n);
+    }
     return 0;
 }
