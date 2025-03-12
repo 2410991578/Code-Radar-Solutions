@@ -13,7 +13,7 @@ int main(){
         }
     }
     if(count==2){
-        printf("%d",arr[i]);
+        printf("%d",arr[]);
     }
     else{
         printf("0");
