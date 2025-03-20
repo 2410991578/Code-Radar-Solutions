@@ -10,7 +10,7 @@ int main(){
     for(int i=0; i<n; i++){
         sum+=arr[i];
     }
-    int r=(n*(n+1))/2;
+    int r=(n*(n-1))/2;
     printf("%d",sum-r);
     return 0;
 }
