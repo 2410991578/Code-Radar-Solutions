@@ -15,7 +15,7 @@ int main() {
     }
     
     // Expected sum of first (n-1) natural numbers
-    int expected_sum = (n * (n - 1)) / 2;
+    int expected_sum = (n * (n + 1)) / 2;
     
     // Output the anomaly
     printf("%d", sum - expected_sum);
