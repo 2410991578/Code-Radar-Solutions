@@ -12,10 +12,14 @@ int main(){
         if(max<arr[i]){
             max=arr[i];
         }
-        else if(arr[i]>max2){
-            max2=arr[i];
-        }
-    printf("%d",max*max2);
     }
+    for (int i=0; i<n; i++){
+        if(max!=max2){
+            if(max2<arr[i]){
+                max2=arr[i];
+            }
+        }
+    }
+    printf("%d",max*max2);
     return 0;
 }
