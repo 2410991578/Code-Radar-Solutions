@@ -14,7 +14,7 @@ int main(){
         }
     }
     for (int i=0; i<n; i++){
-        if(max!=max2){
+        if(max!=arr[i]){
             if(max2<arr[i]){
                 max2=arr[i];
             }
