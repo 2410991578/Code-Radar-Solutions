@@ -17,7 +17,7 @@ int main(){
             
         }
     }
-    if(arr[i]!=even){
+    if(!even){
         printf("-1");
     }
     else{
