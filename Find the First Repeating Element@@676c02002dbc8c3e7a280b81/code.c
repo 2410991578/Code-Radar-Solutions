@@ -12,8 +12,9 @@ int main(){
                 printf("%d",arr[j]);
                 
             }
-            break;
+            
         }
+        break;
     }
     return 0;
 }
