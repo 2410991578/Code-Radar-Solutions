@@ -12,7 +12,7 @@ int main(){
                 printf("%d",arr[j]);
                 
             }
-            
+            break;
         }
     }
     return 0;
