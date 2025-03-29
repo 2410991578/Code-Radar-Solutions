@@ -14,7 +14,7 @@ void factorialRange(int n,int m){
 int main(){
     int start,end;
     scanf("%d %d",&start,&end);
-    if(start<0){
+    if(start==0){
         printf("1");
     }
     else{
