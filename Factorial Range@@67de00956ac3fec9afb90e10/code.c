@@ -1,5 +1,5 @@
 #include <stdio.h>
-void FactorialRange(int n,int m){
+void factorialRange(int n,int m){
     int factorial=1;
     for(int i=n; i<=m; i++){
         int factorial=1;
@@ -18,7 +18,7 @@ int main(){
         printf("1");
     }
     else{
-        FactorialRange(start,end);
+        factorialRange(start,end);
     }
     return 0;
     
