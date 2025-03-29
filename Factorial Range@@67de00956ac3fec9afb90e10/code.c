@@ -3,7 +3,7 @@ void FactorialRange(int n,int m){
     int factorial=1;
     for(int i=n; i<=m; i++){
         for(int j=1; j<=i ;j++){
-            factorial=factorial*i;
+            factorial=factorial*j;
             
         }
         printf("%d\n",factorial);
