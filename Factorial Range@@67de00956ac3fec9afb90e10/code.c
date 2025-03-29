@@ -6,10 +6,10 @@ int FactorialRange(int n,int m){
         printf("%d",factorial);
     }
 }
-int main()[
+int main(){
     int n,m;
     scanf("%d %d",&n,&m);
     FactorialRange(n,m);
     return 0;
     
-]
+}
