@@ -10,11 +10,11 @@ int main(){
         for(int j=0; j<n; j++){
             if(arr[j]>arr[j+1]){
                 printf("Not Sorted");
-                return 0;
+                return;
             }
             else{
                 printf("Sorted");
-                return 0;
+                return;
                 
             }
         }
