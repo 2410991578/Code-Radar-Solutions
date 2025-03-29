@@ -7,9 +7,9 @@ int FactorialRange(int n,int m){
     }
 }
 int main(){
-    int n,m;
-    scanf("%d %d",&n,&m);
-    FactorialRange(n,m);
+    int start,end;
+    scanf("%d %d",&start,&end);
+    FactorialRange(start,end);
     return 0;
     
 }
