@@ -1,9 +1,9 @@
 #include <stdio.h>
 int FactorialRange(int n,int m){
     int factorial=1;
-    for(int i=n; int i<=m; i++){
+    for(int i=n; i<=m; i++){
         factorial=factorial*i;
-        printf("%d",factorial);
+        printf("%d\n",factorial);
     }
 }
 int main(){
