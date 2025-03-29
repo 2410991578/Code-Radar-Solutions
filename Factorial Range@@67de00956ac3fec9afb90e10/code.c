@@ -4,11 +4,9 @@ void factorialRange(int n,int m){
     for(int i=n; i<=m; i++){
         int factorial=1;
         for(int j=1; j<=i ;j++){
-            factorial=factorial*j;
-            
+            factorial=factorial*j;        
         }
-        printf("%d\n",factorial);
-       
+        printf("%d\n",factorial);     
     }
 }
 int main(){
