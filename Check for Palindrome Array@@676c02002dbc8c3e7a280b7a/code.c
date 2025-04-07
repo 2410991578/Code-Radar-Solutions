@@ -3,7 +3,7 @@
 int main() {
     int n;
     scanf("%d", &n);
-    isPalindrome=1;
+    int isPalindrome=1;
     int arr[n];
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
@@ -16,9 +16,9 @@ int main() {
     }
 
     if (isPalindrome) {
-        printf("NO");
-    } else {
         printf("YES");
+    } else {
+        printf("NO");
     }
 
     return 0;
