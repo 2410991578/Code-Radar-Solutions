@@ -1,27 +1,24 @@
-#include<stdio.h>
-int main(){
-    int n;
-    scanf("%d",&n);
-    int arr[n];
-    for(int i=0; i<n; i++){
-        scanf("%d",&arr[i]);
-    }
-    for(int i=0; i<n; i++){
-        n=arr[i];
-        int copy=n;
-        int sum=0;
-        while(n>0){
-            int d=n%10;
-            sum=d+(sum*10);
-            n=n/10;
-        }
-        if(sum==n){
-            printf("YES");
-        }
-        else{
-            printf("NO");
-        }
+#include <stdio.h>
 
+int main() {
+    int n, i, isPalindrome = 1;
+    scanf("%d", &n);
+    int arr[n];
+    for (i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
     }
+
+    for (i = 0; i < n / 2; i++) {
+        if (arr[i] != arr[n - 1 - i]) {
+            isPalindrome = 0;
+            break;
+        }
+    }
+    if (isPalindrome) {
+        printf("YES");
+    } else {
+        printf("NO");
+    }
+
     return 0;
 }
