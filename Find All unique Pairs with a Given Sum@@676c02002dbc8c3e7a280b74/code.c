@@ -5,37 +5,38 @@ int main() {
     scanf("%d", &n);
     int arr[n];
 
-    for(int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
 
     int target;
     scanf("%d", &target);
 
-    int printed = 0; // flag to check if we printed 1 1 already
+    // To store printed value pairs
+    int printedPairs[100][2]; // simple fixed size
+    int printedCount = 0;
 
-    for(int i = 0; i < n; i++) {
-        for(int j = i + 1; j < n; j++) {
-            if(arr[i] + arr[j] == target) {
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] + arr[j] == target) {
                 int a = arr[i];
                 int b = arr[j];
 
-                // ensure we only print (a,b) once
+                // Check if this value pair was already printed
                 int alreadyPrinted = 0;
-                for(int k = 0; k < i; k++) {
-                    for(int l = k + 1; l < n; l++) {
-                        if(arr[k] + arr[l] == target) {
-                            if((arr[k] == a && arr[l] == b) || (arr[k] == b && arr[l] == a)) {
-                                alreadyPrinted = 1;
-                                break;
-                            }
-                        }
+                for (int k = 0; k < printedCount; k++) {
+                    if ((printedPairs[k][0] == a && printedPairs[k][1] == b) ||
+                        (printedPairs[k][0] == b && printedPairs[k][1] == a)) {
+                        alreadyPrinted = 1;
+                        break;
                     }
-                    if(alreadyPrinted) break;
                 }
 
-                if(!alreadyPrinted) {
+                if (!alreadyPrinted) {
                     printf("%d %d\n", a, b);
+                    printedPairs[printedCount][0] = a;
+                    printedPairs[printedCount][1] = b;
+                    printedCount++;
                 }
             }
         }
