@@ -9,8 +9,9 @@ int main(){
     int t;
     scanf("%d",&t);
     for(int i=0; i<n; i++){
+        int index=i;
         if(arr[i]==t){
-            printf("%d",i);
+            printf("%d",index);
             break;
         }
         else if(arr[i]!=t){
