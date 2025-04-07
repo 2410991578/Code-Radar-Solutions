@@ -6,15 +6,22 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d",&arr[i]);
     }
-    for(int i=0; i<n/2; i++){
-        if(arr[i]==arr[n-i]){
+    for(int i=0; i<n; i++){
+        n=arr[i];
+        int copy=n;
+        int sum=0;
+        while(n>0){
+            int d=n%10;
+            sum=d+(sum*10);
+            n=n/10;
+        }
+        if(sum==n){
             printf("YES");
-            break;
         }
         else{
             printf("NO");
-            break;
         }
+
     }
     return 0;
 }
