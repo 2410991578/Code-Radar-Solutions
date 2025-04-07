@@ -10,19 +10,14 @@ int main() {
 
     for (i = 0; i < n / 2; i++) {
         if (arr[i] != arr[n - 1 - i]) {
-            printf("NO");
-            break;
-        }
-        else{
-            printf("YES");
-            break;
-        }
+            isPalindrome=0;
+            
     }
-    // if (isPalindrome) {
-    //     printf("YES");
-    // } else {
-    //     printf("NO");
-    // }
+    if (isPalindrome) {
+        printf("YES");
+    } else {
+        printf("NO");
+    }
 
     return 0;
 }
