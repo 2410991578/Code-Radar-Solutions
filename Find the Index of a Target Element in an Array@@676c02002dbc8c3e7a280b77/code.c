@@ -13,7 +13,6 @@ int main(){
         int index=0
         for(int j=i+1; j<n; j++){
             if(arr[j]==t){
-                index=i;
                 printf("%d",index);
             }
         }
