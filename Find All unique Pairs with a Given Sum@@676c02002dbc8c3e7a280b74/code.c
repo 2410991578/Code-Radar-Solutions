@@ -1,35 +1,33 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    int n, arr[100], target, printed[100][2], count = 0;
     scanf("%d", &n);
-    int arr[n];
 
-    for(int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++)
         scanf("%d", &arr[i]);
 
-    int target;
     scanf("%d", &target);
 
-    for(int i = 0; i < n; i++) {
-        for(int j = i + 1; j < n; j++) {
-            if(arr[i] + arr[j] == target) {
-                int a = arr[i], b = arr[j];
-                // Check if we've already printed this value pair
-                int found = 0;
-                for(int k = 0; k < i; k++) {
-                    for(int l = k + 1; l < n; l++) {
-                        if((arr[k] == a && arr[l] == b) || (arr[k] == b && arr[l] == a)) {
-                            if(arr[k] + arr[l] == target) {
-                                found = 1;
-                                break;
-                            }
-                        }
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) {
+            if (arr[i] + arr[j] == target) {
+                int a = arr[i], b = arr[j], found = 0;
+
+                for (int k = 0; k < count; k++) {
+                    if ((printed[k][0] == a && printed[k][1] == b) ||
+                        (printed[k][0] == b && printed[k][1] == a)) {
+                        found = 1;
+                        break;
                     }
-                    if(found) break;
                 }
-                if(!found)
+
+                if (!found) {
                     printf("%d %d\n", a, b);
+                    printed[count][0] = a;
+                    printed[count][1] = b;
+                    count++;
+                }
             }
         }
     }
