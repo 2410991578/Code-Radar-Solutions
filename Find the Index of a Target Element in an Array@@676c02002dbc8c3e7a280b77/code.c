@@ -10,10 +10,8 @@ int main(){
     scanf("%d",&t);
     
     for(int i=0; i<n; i++){
-        int index=0;
         for(int j=i+1; j<n; j++){
             if(arr[j]==t){
-                index=i;
                 printf("%d",index);
             }
         }
