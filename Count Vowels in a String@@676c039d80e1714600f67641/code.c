@@ -2,10 +2,9 @@
 int main(){
     char str[50];
     scanf("%s",str);
-    char vowel='a','o','i','e','u';
     int count =0;
     for(int i=0; str[i]!='\0'; i++){
-        if(str[i]==vowel){
+        if(str[i]=='a' || str[i]=='e' || str[i]=='i' || str[i]='o' || str[i]='u'){
             count++;
         }
     }
