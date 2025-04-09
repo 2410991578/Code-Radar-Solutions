@@ -2,9 +2,9 @@
 int main(){
     char str[50];
     scanf("%[^\n]s",str);
-    int size;
+    int size=0;
     for(int i=0; str[i]!='\0'; i++){
-        size++
+        size++;
     }
     for(int i=0,j=size-1; i<=j; i++,j--){
         int t=str[i];
