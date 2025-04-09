@@ -4,7 +4,7 @@ int main(){
     scanf("%[^\n]s",str);
     int j=0;
     for(int i=0; str[i]!='\0'; i++){
-        if(str[i]=='\0'){
+        if(str[i]==' '){
             ar[j]=str[i];
             j++;
         }
