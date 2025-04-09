@@ -10,6 +10,7 @@ int main(){
         }
         else if(inword=0){
             count++;
+            inword=1;
         }
     }
     printf("%d",count);
