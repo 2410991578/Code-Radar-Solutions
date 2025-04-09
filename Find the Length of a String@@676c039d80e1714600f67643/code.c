@@ -1,9 +1,8 @@
 #include <stdio.h>
-#include <string.h>
 int main(){
     char str[50];
-    fgets(str);
-    int size=0;
+    scanf("%[^\n]s",&str)
+     int size=0;
     for(int i=0; str[i]!='\0'; i++){
         size++;
     }
