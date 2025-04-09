@@ -11,6 +11,6 @@ int main(){
        
     }
      ar[j]='\0';
-    printf("%s",str);
+    printf("%s",ar);
     return 0;
 }
