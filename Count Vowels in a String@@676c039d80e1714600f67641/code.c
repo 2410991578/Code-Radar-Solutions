@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    char[50];
+    char str[50];
     scanf("%s",str);
     char vowel='a','o','i','e','u';
     int count =0;
