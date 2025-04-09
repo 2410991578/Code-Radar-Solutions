@@ -10,6 +10,6 @@ int main(){
         }
         str[j]='\0';
     }
-    printf("%s",str[j]);
+    printf("%s",str);
     return 0;
 }
