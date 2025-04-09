@@ -4,7 +4,7 @@ int main(){
     scanf("%s",str);
     int size=0;
     for(int i=0; str[i]!='\0'; i++){
-        size++
+        size++;
     }
     printf("%d",size);
     return 0;
