@@ -4,7 +4,7 @@ int main(){
     char str[100];
     scanf("%[^\n]s",str);
     int count_word =0;
-    bool inWord = 0;
+    int inWord = 0;
 
     for(int i=0; str[i]!='\0'; i++){
         if (str[i] != ' ' && str[i] != '\n') {
