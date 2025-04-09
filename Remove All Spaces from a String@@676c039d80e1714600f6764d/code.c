@@ -10,7 +10,7 @@ int main(){
         }
        
     }
-    // ar[j]='\0';
+     ar[j]='\0';
     printf("%s",ar);
     return 0;
 }
