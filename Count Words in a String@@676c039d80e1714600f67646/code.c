@@ -1,21 +1,17 @@
 #include <stdio.h>
-// #include <stdbool.h>
 int main(){
     char str[100];
     scanf("%[^\n]s",str);
-    int count_word =0;
-    int inWord = 0;
-
+    int count=0;
+    int inword=0;
     for(int i=0; str[i]!='\0'; i++){
-        if (str[i] != ' ' && str[i] != '\n') {
-            if (!inWord) {
-                count_word++;
-                inWord =1;
-            }
-        } else {
-            inWord = 0;
+        if(str[i]==' ' || str[i]=='\n'){
+            inword=0;
+        }
+        else if(inword=0){
+            count++;
         }
     }
-    printf("%d",count_word);
+    printf("%d",count);
     return 0;
 }
