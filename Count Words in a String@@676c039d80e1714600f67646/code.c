@@ -9,8 +9,9 @@ int main(){
             inword=0;
         }
         else if(inword==0){
-            count++;
+           
             inword=1;
+            count++;
         }
     }
     printf("%d",count);
