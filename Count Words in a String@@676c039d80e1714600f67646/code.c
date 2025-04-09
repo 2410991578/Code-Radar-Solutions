@@ -5,7 +5,7 @@ int main(){
     int size=0;
     int count =0;
     for(int i=0; str[i]!='\0'; i++){
-        if(str[i]==' ' || str[i]=='\n'){
+        if(str[i]==' ' || str[i]=='\n' || str[i]=='\t'){
             count++;
         }
     }
