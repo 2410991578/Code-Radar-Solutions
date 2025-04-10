@@ -12,7 +12,9 @@ int main(){
         if(arr[i]>largest){
             largest=arr[i];
         }
-        else if(arr[i]!=largest){
+    }
+    for(int i=0 ;i<n; i++){
+        if(arr[i]!=largest){
             second_largest=arr[i];
         }
     }
