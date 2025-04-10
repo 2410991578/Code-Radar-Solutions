@@ -12,12 +12,11 @@ int main(){
         if(arr[i]>largest){
             largest=arr[i];
         }
-    }
-    for(int i=0; i<n; i++){
-        if(arr[i]!=largest){
+        else if(arr[i]!=largest){
             second_largest=arr[i];
         }
     }
+    
     if(second_largest==-1){
         printf("-1");
     }
