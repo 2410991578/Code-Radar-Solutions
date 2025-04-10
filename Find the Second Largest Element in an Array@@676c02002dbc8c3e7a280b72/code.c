@@ -18,7 +18,7 @@ int main(){
             second_largest=arr[i];
         }
     }
-    if(arr[i]==-1){
+    if(second_largest==-1){
         printf("-1");
     }
     else{
