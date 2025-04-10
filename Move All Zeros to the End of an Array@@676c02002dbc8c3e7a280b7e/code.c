@@ -14,10 +14,10 @@ int main(){
             arr[j]=t;
             j++;
         }
-        printf("%d ",arr[i]);
+        // printf("%d ",arr[i]);
     }
-    // for(int i=0; i<n; i++){
-    // printf("%d ",arr[i]);
-    // }
+    for(int i=0; i<n; i++){
+    printf("%d ",arr[i]);
+    }
     return 0;
 }
