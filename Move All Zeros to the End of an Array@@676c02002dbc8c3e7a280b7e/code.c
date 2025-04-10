@@ -12,6 +12,7 @@ int main(){
             int t=arr[i];
             arr[i]=arr[j];
             arr[j]=t;
+            j++;
         }
         printf("%d ",arr[i]);
     }
