@@ -13,9 +13,10 @@ int main(){
             arr[i]=arr[j];
             arr[j]=t;
         }
+        printf("%d ",arr[i]);
     }
-    for(int i=0; i<n; i++){
-    printf("%d ",arr[i]);
-    }
+    // for(int i=0; i<n; i++){
+    // printf("%d ",arr[i]);
+    // }
     return 0;
 }
